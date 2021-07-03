@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.select-birthday {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0 8px;
+  position: relative;
+}
+.select-birthday__text {
+  font-size: 21px;
+  color: #232323;
+}
+.select-birthday__day,
+.select-birthday__month,
+.select-birthday__year {
+  font-size: 14px;
+  text-transform: capitalize;
+  border-color: #c7c7c7;
+  color: #555;
+}
+.select-birthday > *:not(.age) {
+  margin: 0 8px;
+}
+.age {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+  position: absolute;
+  bottom: -1px;
+  transform: translateY(100%);
+  left: 0;
+  right: 0;
+  padding: 60px 10px;
+}
+.age.bg {
+  background-color: #fafafa;
+}
